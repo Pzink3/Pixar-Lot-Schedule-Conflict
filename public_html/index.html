@@ -1,0 +1,531 @@
+<center>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="503px" height="266px" viewBox="0 0 503 266" enable-background="new 0 0 503 266" xml:space="preserve">
+
+<!-- The definitions section contains resources that will be reused by other parts of the graphic -->
+<defs>
+	<!-- Side to side movement for individual balloons -->
+	<path id="balloonPath1" d="M0 0 L5 0 L0 0"/>
+	<path id="balloonPath2" d="M5 0 L0 0 L5 0"/>
+	<path id="balloonPath3" d="M3 0 L5 0 L0 0 L3 0"/>
+	<path id="balloonPath4" d="M2 0 L3 0 L0 0 L2 0"/>
+	<path id="clusterPath" d="M0 503 L800 -1200" fill="none"/>
+	<!-- Gradient for the facade of Meg's building -->
+	<linearGradient id="Gbuilding" gradientUnits="userSpaceOnUse" x1="251" y1="0" x2="251" y2="266">
+		<stop  offset="0.5546" style="stop-color:#DFE0DA"/>
+		<stop  offset="1" style="stop-color:#525252"/>
+	</linearGradient>
+	<!-- Gradient for the left wall of George's office -->
+	<linearGradient id="Glwall" gradientUnits="userSpaceOnUse" x1="87" y1="0" x2="0" y2="0">
+		<stop  offset="0.5546" style="stop-color:#999999"/>
+		<stop  offset="1" style="stop-color:#525252"/>
+	</linearGradient>
+	<!-- Gradient for the right wall of George's office -->
+	<linearGradient id="Grwall" gradientUnits="userSpaceOnUse" x1="389" y1="0" x2="503" y2="0">
+		<stop  offset="0.5546" style="stop-color:#999999"/>
+		<stop  offset="1" style="stop-color:#525252"/>
+	</linearGradient>
+	<!-- Gradient for the floor of George's office -->
+	<linearGradient id="Gfloor" gradientUnits="userSpaceOnUse" x1="0" y1="226" x2="0" y2="256">
+		<stop  offset="0.5546" style="stop-color:#999999"/>
+		<stop  offset="1" style="stop-color:#aaaaaa"/>
+	</linearGradient>
+	<!-- Radial gradient to make purple balloons appear shiny -->
+	<radialGradient id="Gpur" cx="34" cy="9" r="23" gradientTransform="matrix(0.5 -0.866 0.5196 0.3 -5.4299 35.7975)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
+		<stop  offset="1" style="stop-color:#C22AFF;stop-opacity:0.8"/>
+	</radialGradient>
+	<!-- Radial gradient to make red balloons appear shiny -->
+	<radialGradient id="Gred" cx="34" cy="9" r="23" gradientTransform="matrix(0.5 -0.866 0.5196 0.3 -5.4299 35.7975)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
+		<stop  offset="1" style="stop-color:#FF0000;stop-opacity:0.8"/>
+	</radialGradient>
+	<!-- Radial gradient to make yellow balloons appear shiny -->
+	<radialGradient id="Gyel" cx="34" cy="9" r="23" gradientTransform="matrix(0.5 -0.866 0.5196 0.3 -5.4299 35.7975)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
+		<stop  offset="1" style="stop-color:#F1F058;stop-opacity:0.8"/>
+	</radialGradient>
+	<!-- Radial gradient to make teal balloons appear shiny -->
+	<radialGradient id="Gtea" cx="34" cy="9" r="23" gradientTransform="matrix(0.5 -0.866 0.5196 0.3 -5.4299 35.7975)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
+		<stop  offset="1" style="stop-color:#7be2d5;stop-opacity:0.8"/>
+	</radialGradient>
+	<!-- Radial gradient to make green balloons appear shiny -->
+	<radialGradient id="Ggre" cx="34" cy="9" r="23" gradientTransform="matrix(0.5 -0.866 0.5196 0.3 -5.4299 35.7975)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
+		<stop  offset="1" style="stop-color:#62903e;stop-opacity:0.8"/>
+	</radialGradient>
+	<!-- Radial gradient to make orange balloons appear shiny -->
+	<radialGradient id="Gora" cx="34" cy="9" r="23" gradientTransform="matrix(0.5 -0.866 0.5196 0.3 -5.4299 35.7975)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
+		<stop  offset="1" style="stop-color:#fc8d3d;stop-opacity:0.8"/>
+	</radialGradient>
+	<!-- template for all red balloons, defining their color, gradient and lateral movement -->
+	<g id="b_red">
+		<path fill="url(#Gred)" stroke="#C22AFF" stroke-width="0.25" d="M36.875,23.125 c0,9.94-17.125,32.996-19.75,33.25c-3,0.29-17-24.096-17-33.25c0-12.703,8.227-23,18.375-23S36.875,10.422,36.875,23.125z">
+			<animateMotion dur="1.5s" repeatCount="indefinite">
+				<mpath xlink:href="#balloonPath1"/>
+			</animateMotion>
+		</path>
+	</g>
+	<!-- template for all purple balloons, defining their color, gradient and lateral movement -->
+	<g id="b_pur">
+		<path fill="url(#Gpur)" stroke="#C22AFF" stroke-width="0.25" d="M36.875,23.125 c0,9.94-17.125,32.996-19.75,33.25c-3,0.29-17-24.096-17-33.25c0-12.703,8.227-23,18.375-23S36.875,10.422,36.875,23.125z">
+			<animateMotion dur="1.5s" repeatCount="indefinite">
+				<mpath xlink:href="#balloonPath2"/>
+			</animateMotion>
+		</path>
+	</g>
+	<!-- template for all yellow balloons, defining their color, gradient and lateral movement -->
+	<g id="b_yel">
+		<path fill="url(#Gyel)" stroke="#FFFFFF" stroke-width="0.25" d="M36.875,23.125 c0,9.94-17.125,32.996-19.75,33.25c-3,0.29-17-24.096-17-33.25c0-12.703,8.227-23,18.375-23S36.875,10.422,36.875,23.125z">
+			<animateMotion dur="1.5s" repeatCount="indefinite">
+				<mpath xlink:href="#balloonPath4"/>
+			</animateMotion>
+		</path>
+	</g>
+	<!-- template for all teal balloons, defining their color, gradient and lateral movement -->
+	<g id="b_tea">
+		<path fill="url(#Gtea)" stroke="#FFFFFF" stroke-width="0.25" d="M36.875,23.125 c0,9.94-17.125,32.996-19.75,33.25c-3,0.29-17-24.096-17-33.25c0-12.703,8.227-23,18.375-23S36.875,10.422,36.875,23.125z">
+			<animateMotion dur="1.5s" repeatCount="indefinite">
+				<mpath xlink:href="#balloonPath2"/>
+			</animateMotion>
+		</path>
+	</g>
+	<!-- template for all green balloons, defining their color, gradient and lateral movement -->
+	<g id="b_gre">
+		<path fill="url(#Ggre)" stroke="#FFFFFF" stroke-width="0.25" d="M36.875,23.125 c0,9.94-17.125,32.996-19.75,33.25c-3,0.29-17-24.096-17-33.25c0-12.703,8.227-23,18.375-23S36.875,10.422,36.875,23.125z">
+			<animateMotion dur="1.5s" repeatCount="indefinite">
+				<mpath xlink:href="#balloonPath3"/>
+			</animateMotion>
+		</path>
+	</g>
+	<!-- template for all orange balloons, defining their color, gradient and lateral movement -->
+	<g id="b_ora">
+		<path fill="url(#Gora)" stroke="#FFFFFF" stroke-width="0.25" d="M36.875,23.125 c0,9.94-17.125,32.996-19.75,33.25c-3,0.29-17-24.096-17-33.25c0-12.703,8.227-23,18.375-23S36.875,10.422,36.875,23.125z">
+			<animateMotion dur="1.5s" repeatCount="indefinite">
+				<mpath xlink:href="#balloonPath2"/>
+			</animateMotion>
+		</path>
+	</g>
+	<!-- clip path for the right wall reflection -->
+	<clipPath id="clip_wall_r">
+	        <path d="M503,0 503,266 389.833,226.5 389.833,26.5 411.166,0z"/>
+	</clipPath>
+	<!-- creates an additional instance of the balloon cluster, flips (scale -1,1) and moves it so it looks like a reflection -->
+	<use id="reflect_wall_r" xlink:href="#balloon_cluster" x="0" y="0" transform="translate(740, 0) scale(-1, 1)" />
+
+	<!-- clip path for the left wall reflection -->
+	<clipPath id="clip_wall_l">
+	        <path d="M0,0 68.5,0 87.166,26.5 87.166,226.5 0,258.5z"/>
+	</clipPath>
+	<!-- creates an additional instance of the balloon cluster, flips (scale -1,1) and moves it so it looks like a reflection -->
+	<use id="reflect_wall_l" xlink:href="#balloon_cluster" x="0" y="0" transform="translate(160, 0) scale(-1, 1)" />
+
+	<!-- clip path for the floor reflection -->
+	<clipPath id="clip_floor">
+	        <path d="M468.833,266 0,266 0,258.5 87.166,226.5 389.833,226.5 503,266z"/>
+	</clipPath>
+	<!-- creates an additional instance of the balloon cluster, rotates it and moves it so it looks like a reflection -->
+	<use id="reflect_floor" xlink:href="#balloon_cluster" x="0" y="0" transform="translate(0, 450) rotate(180) scale(-1, 1)" />
+
+	<!-- clip path for the ceiling reflection -->
+	<clipPath id="clip_ceiling">
+	        <path d="M68.5,0 87.166,26.5 389.833,26.5 411.166,0z"/>
+	</clipPath>
+	<!-- creates an additional instance of the balloon cluster, flips (scale -1,1) and moves it so it looks like a reflection -->
+	<use id="reflect_ceiling" xlink:href="#balloon_cluster" x="0" y="0" transform="translate(0, 60) rotate(180) scale(-1, 1)" />
+</defs>
+
+<g id="megs_building">
+	<rect id="building_facade" fill="url(#Gbuilding)" width="503" height="266"/>
+	<rect id="megs_window" x="193" y="56" fill="#403D3B" stroke="#72706F" stroke-width="4" width="64" height="101"/>
+	<!-- other windows follow -->
+	<rect x="69" y="56" fill="#B7B5B3" stroke="#72706F" stroke-width="4" width="64" height="101"/>
+	<rect x="317" y="56" fill="#B7B5B3" stroke="#72706F" stroke-width="4" width="64" height="101"/>
+	<rect x="67" y="203" fill="#B7B5B3" stroke="#72706F" stroke-width="4" width="64" height="101"/>
+	<rect x="315" y="203" fill="#B7B5B3" stroke="#72706F" stroke-width="4" width="64" height="101"/>
+	<rect x="193" y="203" fill="#B7B5B3" stroke="#72706F" stroke-width="4" width="64" height="101"/>
+	<g id="meg">
+	<polygon id="megs_limbs" fill="#D2D3CF" points="229.675,149.112 227.324,155.659 226.401,155.659 226.401,152.385 224.051,155.659 222.791,155.659 226.904,144.663 221.344,140.704 227.912,141.724 224.471,140.045 222.959,138.535 220.327,138.535 216.328,135.428 216.999,140.213 223.547,144.159"/>
+	<path id="megs_dress" fill="#91928D" d="M211.543,127.958c0,0,1.119,7.835,0,10.856c-0.448,2.352-2.575,6.381,3.022,7.052 c5.596,0.672,10.856,0,10.856,0l-1.566,2.351l6.938,2.91l1.119-6.828l-13.985-4.757c0,0-1.684-5.764-1.572-6.547 c0.112-0.783,1.447-2.687,1.447-2.687s1.81-2.126,0.125-3.469c-1.684-1.343-1.796-3.357-1.796-5.148 S212.773,121.354,211.543,127.958z"/>
+	<path id="megs_face" fill="#D2D3CF" d="M219.07,112.456c0,0,0.56,0.14,0.56,1.035c0,0.896-0.14,2.351-0.14,2.351s0.342,0.125,0.671,0.28 s0.112,0.572-0.168,0.924c-0.336,0.279-0.432,0.114-0.432,0.114s0.18,0.866-0.268,1.285c-0.448,0.42-0.644,0.755-2.155,0.42 c-1.511-0.336-2.07-3.666-1.79-4.253C215.628,114.023,218.455,112.428,219.07,112.456z"/>
+	<path id="megs_hair" fill="#41423D" stroke="#000000" stroke-width="0.25" d="M219.238,111.785 c0,0,0.699,1.707-2.854,2.881c0.084-0.363,0.168-0.503,0.168-0.503s-0.951,2.882,1.651,5.316c0.727,0.812,0.727,3.106-1.148,3.442 c-1.874,0.336-4.505-1.483-4.925-1.679c-0.419-0.195-1.734-1.958-1.146-3.05c0.588-1.091,1.203-1.846,0.783-3.777 s0.867-4.449,2.63-3.917c1.764,0.532,3.945,0.419,4.896,1.175"/>
+	<path id="megs_eyewhite" fill="#FFFFFF" d="M217.928,115.058l0.535,0.531l0.495-0.154c0,0,0.084-0.985,0-1.073s-0.587,0.108-0.587,0.108 L217.928,115.058z"/>
+	<path id="megs_eyes" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" d="M217.928,115.058 c0,0,0.415-0.728,0.946-0.784c0.28,0.224,0.335,0.812,0.224,1.091c-0.111,0.14-0.392,0.141-0.279-0.7c0.111-0.84,0-0.196,0-0.196"/>
+	<!-- This animation makes Meg disappear while the house is blocking George's view.
+		 I animate the DISPLAY attribute rather than the OPACITY attribute because animating opacity is more expensive -->
+	<animate dur="9s" repeatCount="indefinite" attributeName="display" values="block;block;block;block;block;block;none;none;"/>
+	</g>
+</g>
+<!-- this group contains the balloons, strings and house. It tells the browser which balloon template to use from the 
+	 definitions section above, where to place it, and gives it a subtle rotation so it looks natural. -->
+<g id="balloon_cluster">
+	<use xlink:href="#b_pur" x="-200" y="0" transform="rotate(10)"/>
+	<use xlink:href="#b_pur" x="-230" y="15" transform="rotate(3)"/>
+	<use xlink:href="#b_pur" x="-170" y="30" transform="rotate(5)"/>
+	<use xlink:href="#b_pur" x="-200" y="40" transform="rotate(9)"/>
+	<use xlink:href="#b_yel" x="-250" y="10" transform="rotate(1)"/>
+	<use xlink:href="#b_tea" x="-235" y="20" transform="rotate(3)"/>
+	<use xlink:href="#b_yel" x="-250" y="10" transform="rotate(9)"/>
+	<use xlink:href="#b_yel" x="-130" y="40" transform="rotate(2)"/>
+	<use xlink:href="#b_gre" x="-150" y="40" transform="rotate(8)"/>
+
+	<use xlink:href="#b_red" x="-265" y="50" transform="rotate(4)"/>
+	<use xlink:href="#b_tea" x="-235" y="55" transform="rotate(3)"/>
+	<use xlink:href="#b_yel" x="-205" y="45" transform="rotate(7)"/>
+	<use xlink:href="#b_pur" x="-175" y="55" transform="rotate(4)"/>
+	<use xlink:href="#b_tea" x="-145" y="45" transform="rotate(5)"/>
+	<use xlink:href="#b_gre" x="-115" y="50" transform="rotate(7)"/>
+	<use xlink:href="#b_ora" x="-85" y="55" transform="rotate(3)"/>
+
+	<use xlink:href="#b_red" x="-280" y="80" transform="rotate(4)"/>
+	<use xlink:href="#b_tea" x="-250" y="85" transform="rotate(6)"/>
+	<use xlink:href="#b_yel" x="-220" y="75" transform="rotate(1)"/>
+	<use xlink:href="#b_pur" x="-190" y="85" transform="rotate(9)"/>
+	<use xlink:href="#b_tea" x="-160" y="75" transform="rotate(1)"/>
+	<use xlink:href="#b_gre" x="-130" y="80" transform="rotate(7)"/>
+	<use xlink:href="#b_yel" x="-100" y="85" transform="rotate(3)"/>
+	<use xlink:href="#b_pur" x="-70" y="80" transform="rotate(7)"/>
+	<use xlink:href="#b_red" x="-40" y="75" transform="rotate(2)"/>
+
+	<use xlink:href="#b_red" x="-300" y="110" transform="rotate(9)"/>
+	<use xlink:href="#b_tea" x="-270" y="115" transform="rotate(2)"/>
+	<use xlink:href="#b_yel" x="-240" y="105" transform="rotate(7)"/>
+	<use xlink:href="#b_ora" x="-210" y="115" transform="rotate(4)"/>
+	<use xlink:href="#b_pur" x="-180" y="105" transform="rotate(6)"/>
+	<use xlink:href="#b_gre" x="-150" y="110" transform="rotate(3)"/>
+	<use xlink:href="#b_yel" x="-120" y="115" transform="rotate(9)"/>
+	<use xlink:href="#b_pur" x="-90" y="110" transform="rotate(1)"/>
+	<use xlink:href="#b_tea" x="-60" y="105" transform="rotate(0)"/>
+	<use xlink:href="#b_red" x="-30" y="105" transform="rotate(5)"/>
+
+	<use xlink:href="#b_red" x="-320" y="140" transform="rotate(3)"/>
+	<use xlink:href="#b_tea" x="-290" y="145" transform="rotate(7)"/>
+	<use xlink:href="#b_tea" x="-260" y="135" transform="rotate(2)"/>
+	<use xlink:href="#b_ora" x="-230" y="145" transform="rotate(5)"/>
+	<use xlink:href="#b_gre" x="-200" y="135" transform="rotate(3)"/>
+	<use xlink:href="#b_yel" x="-170" y="140" transform="rotate(9)"/>
+	<use xlink:href="#b_ora" x="-140" y="145" transform="rotate(7)"/>
+	<use xlink:href="#b_tea" x="-110" y="140" transform="rotate(8)"/>
+	<use xlink:href="#b_yel" x="-80" y="135" transform="rotate(6)"/>
+	<use xlink:href="#b_red" x="-50" y="135" transform="rotate(1)"/>
+	<use xlink:href="#b_ora" x="-20" y="135" transform="rotate(9)"/>
+
+	<use xlink:href="#b_red" x="-340" y="170" transform="rotate(2)"/>
+	<use xlink:href="#b_yel" x="-310" y="175" transform="rotate(4)"/>
+	<use xlink:href="#b_yel" x="-280" y="165" transform="rotate(9)"/>
+	<use xlink:href="#b_tea" x="-250" y="175" transform="rotate(3)"/>
+	<use xlink:href="#b_pur" x="-220" y="165" transform="rotate(2)"/>
+	<use xlink:href="#b_gre" x="-190" y="170" transform="rotate(7)"/>
+	<use xlink:href="#b_yel" x="-160" y="175" transform="rotate(6)"/>
+	<use xlink:href="#b_pur" x="-130" y="170" transform="rotate(7)"/>
+	<use xlink:href="#b_tea" x="-100" y="165" transform="rotate(3)"/>
+	<use xlink:href="#b_yel" x="-70" y="165" transform="rotate(8)"/>
+	<use xlink:href="#b_pur" x="-40" y="165" transform="rotate(1)"/>
+	<use xlink:href="#b_yel" x="-10" y="165" transform="rotate(6)"/>
+
+	<use xlink:href="#b_tea" x="-360" y="200" transform="rotate(3)"/>
+	<use xlink:href="#b_tea" x="-330" y="205" transform="rotate(7)"/>
+	<use xlink:href="#b_pur" x="-300" y="195" transform="rotate(7)"/>
+	<use xlink:href="#b_ora" x="-270" y="205" transform="rotate(2)"/>
+	<use xlink:href="#b_yel" x="-240" y="195" transform="rotate(5)"/>
+	<use xlink:href="#b_gre" x="-210" y="200" transform="rotate(4)"/>
+	<use xlink:href="#b_ora" x="-180" y="205" transform="rotate(9)"/>
+	<use xlink:href="#b_pur" x="-150" y="200" transform="rotate(3)"/>
+	<use xlink:href="#b_tea" x="-120" y="195" transform="rotate(1)"/>
+	<use xlink:href="#b_red" x="-90" y="195" transform="rotate(8)"/>
+	<use xlink:href="#b_yel" x="-60" y="195" transform="rotate(5)"/>
+	<use xlink:href="#b_yel" x="-30" y="195" transform="rotate(3)"/>
+	<use xlink:href="#b_tea" x="0" y="195" transform="rotate(6)"/>
+
+	<use xlink:href="#b_red" x="-380" y="230" transform="rotate(7)"/>
+	<use xlink:href="#b_tea" x="-350" y="235" transform="rotate(5)"/>
+	<use xlink:href="#b_yel" x="-320" y="225" transform="rotate(2)"/>
+	<use xlink:href="#b_yel" x="-290" y="235" transform="rotate(8)"/>
+	<use xlink:href="#b_gre" x="-260" y="225" transform="rotate(9)"/>
+	<use xlink:href="#b_pur" x="-230" y="230" transform="rotate(3)"/>
+	<use xlink:href="#b_ora" x="-200" y="235" transform="rotate(4)"/>
+	<use xlink:href="#b_pur" x="-170" y="230" transform="rotate(7)"/>
+	<use xlink:href="#b_tea" x="-140" y="225" transform="rotate(1)"/>
+	<use xlink:href="#b_pur" x="-110" y="225" transform="rotate(4)"/>
+	<use xlink:href="#b_ora" x="-80" y="225" transform="rotate(7)"/>
+	<use xlink:href="#b_yel" x="-50" y="225" transform="rotate(9)"/>
+	<use xlink:href="#b_tea" x="-20" y="225" transform="rotate(3)"/>
+	<use xlink:href="#b_ora" x="10" y="225" transform="rotate(5)"/>
+
+	<use xlink:href="#b_yel" x="-400" y="260" transform="rotate(6)"/>
+	<use xlink:href="#b_tea" x="-370" y="265" transform="rotate(2)"/>
+	<use xlink:href="#b_yel" x="-340" y="255" transform="rotate(6)"/>
+	<use xlink:href="#b_ora" x="-310" y="265" transform="rotate(8)"/>
+	<use xlink:href="#b_gre" x="-280" y="255" transform="rotate(3)"/>
+	<use xlink:href="#b_tea" x="-250" y="260" transform="rotate(9)"/>
+	<use xlink:href="#b_ora" x="-220" y="265" transform="rotate(1)"/>
+	<use xlink:href="#b_pur" x="-190" y="260" transform="rotate(0)"/>
+	<use xlink:href="#b_red" x="-160" y="255" transform="rotate(4)"/>
+	<use xlink:href="#b_red" x="-130" y="255" transform="rotate(7)"/>
+	<use xlink:href="#b_ora" x="-100" y="255" transform="rotate(3)"/>
+	<use xlink:href="#b_yel" x="-70" y="255" transform="rotate(8)"/>
+	<use xlink:href="#b_tea" x="-40" y="255" transform="rotate(3)"/>
+	<use xlink:href="#b_ora" x="-10" y="255" transform="rotate(9)"/>
+	<use xlink:href="#b_tea" x="20" y="255" transform="rotate(4)"/>
+
+	<use xlink:href="#b_red" x="-420" y="280" transform="rotate(7)"/>
+	<use xlink:href="#b_tea" x="-390" y="285" transform="rotate(3)"/>
+	<use xlink:href="#b_yel" x="-360" y="275" transform="rotate(7)"/>
+	<use xlink:href="#b_pur" x="-330" y="285" transform="rotate(1)"/>
+	<use xlink:href="#b_gre" x="-300" y="275" transform="rotate(8)"/>
+	<use xlink:href="#b_yel" x="-270" y="280" transform="rotate(6)"/>
+	<use xlink:href="#b_ora" x="-250" y="285" transform="rotate(4)"/>
+	<use xlink:href="#b_pur" x="-210" y="280" transform="rotate(0)"/>
+	<use xlink:href="#b_tea" x="-180" y="275" transform="rotate(5)"/>
+	<use xlink:href="#b_red" x="-150" y="275" transform="rotate(1)"/>
+	<use xlink:href="#b_ora" x="-120" y="275" transform="rotate(5)"/>
+	<use xlink:href="#b_tea" x="-90" y="275" transform="rotate(9)"/>
+	<use xlink:href="#b_yel" x="-60" y="275" transform="rotate(5)"/>
+	<use xlink:href="#b_pur" x="-30" y="275" transform="rotate(3)"/>
+	<use xlink:href="#b_ora" x="0" y="275" transform="rotate(9)"/>
+	<use xlink:href="#b_red" x="30" y="275" transform="rotate(4)"/>
+
+	<use xlink:href="#b_pur" x="-440" y="300" transform="rotate(2)"/>
+	<use xlink:href="#b_tea" x="-410" y="305" transform="rotate(5)"/>
+	<use xlink:href="#b_yel" x="-380" y="295" transform="rotate(8)"/>
+	<use xlink:href="#b_tea" x="-350" y="305" transform="rotate(3)"/>
+	<use xlink:href="#b_gre" x="-320" y="295" transform="rotate(5)"/>
+	<use xlink:href="#b_gre" x="-290" y="300" transform="rotate(3)"/>
+	<use xlink:href="#b_ora" x="-260" y="305" transform="rotate(7)"/>
+	<use xlink:href="#b_pur" x="-230" y="300" transform="rotate(3)"/>
+	<use xlink:href="#b_red" x="-200" y="295" transform="rotate(4)"/>
+	<use xlink:href="#b_red" x="-170" y="295" transform="rotate(7)"/>
+	<use xlink:href="#b_ora" x="-140" y="295" transform="rotate(4)"/>
+	<use xlink:href="#b_yel" x="-110" y="295" transform="rotate(7)"/>
+	<use xlink:href="#b_tea" x="-80" y="295" transform="rotate(3)"/>
+	<use xlink:href="#b_pur" x="-50" y="295" transform="rotate(6)"/>
+	<use xlink:href="#b_ora" x="-20" y="295" transform="rotate(3)"/>
+	<use xlink:href="#b_red" x="10" y="295" transform="rotate(1)"/>
+	<use xlink:href="#b_yel" x="40" y="295" transform="rotate(8)"/>
+
+	<use xlink:href="#b_red" x="-460" y="320" transform="rotate(6)"/>
+	<use xlink:href="#b_tea" x="-430" y="325" transform="rotate(4)"/>
+	<use xlink:href="#b_yel" x="-400" y="315" transform="rotate(7)"/>
+	<use xlink:href="#b_ora" x="-370" y="335" transform="rotate(4)"/>
+	<use xlink:href="#b_yel" x="-340" y="215" transform="rotate(2)"/>
+	<use xlink:href="#b_gre" x="-310" y="320" transform="rotate(6)"/>
+	<use xlink:href="#b_ora" x="-280" y="325" transform="rotate(7)"/>
+	<use xlink:href="#b_pur" x="-250" y="320" transform="rotate(5)"/>
+	<use xlink:href="#b_red" x="-220" y="315" transform="rotate(1)"/>
+	<use xlink:href="#b_red" x="-190" y="315" transform="rotate(9)"/>
+	<use xlink:href="#b_ora" x="-160" y="315" transform="rotate(4)"/>
+	<use xlink:href="#b_yel" x="-130" y="315" transform="rotate(8)"/>
+	<use xlink:href="#b_tea" x="-100" y="315" transform="rotate(5)"/>
+	<use xlink:href="#b_yel" x="-70" y="315" transform="rotate(1)"/>
+	<use xlink:href="#b_ora" x="-40" y="315" transform="rotate(6)"/>
+	<use xlink:href="#b_red" x="-10" y="315" transform="rotate(3)"/>
+	<use xlink:href="#b_tea" x="20" y="315" transform="rotate(5)"/>
+	<use xlink:href="#b_pur" x="50" y="315" transform="rotate(8)"/>
+
+	<use xlink:href="#b_tea" x="-470" y="345" transform="rotate(4)"/>
+	<use xlink:href="#b_pur" x="-440" y="345" transform="rotate(7)"/>
+	<use xlink:href="#b_ora" x="-410" y="345" transform="rotate(1)"/>
+	<use xlink:href="#b_gre" x="-380" y="235" transform="rotate(9)"/>
+	<use xlink:href="#b_gre" x="-350" y="340" transform="rotate(5)"/>
+	<use xlink:href="#b_tea" x="-320" y="345" transform="rotate(2)"/>
+	<use xlink:href="#b_yel" x="-290" y="340" transform="rotate(7)"/>
+	<use xlink:href="#b_red" x="-260" y="335" transform="rotate(8)"/>
+	<use xlink:href="#b_red" x="-230" y="335" transform="rotate(4)"/>
+	<use xlink:href="#b_ora" x="-210" y="335" transform="rotate(1)"/>
+	<use xlink:href="#b_yel" x="-170" y="335" transform="rotate(4)"/>
+	<use xlink:href="#b_tea" x="-140" y="335" transform="rotate(6)"/>
+	<use xlink:href="#b_pur" x="-110" y="335" transform="rotate(2)"/>
+	<use xlink:href="#b_yel" x="-80" y="335" transform="rotate(7)"/>
+	<use xlink:href="#b_red" x="-50" y="335" transform="rotate(5)"/>
+	<use xlink:href="#b_red" x="-20" y="335" transform="rotate(9)"/>
+	<use xlink:href="#b_pur" x="10" y="335" transform="rotate(7)"/>
+
+	<use xlink:href="#b_tea" x="-450" y="365" transform="rotate(3)"/>
+	<use xlink:href="#b_gre" x="-420" y="365" transform="rotate(5)"/>
+	<use xlink:href="#b_gre" x="-390" y="370" transform="rotate(6)"/>
+	<use xlink:href="#b_pur" x="-360" y="365" transform="rotate(1)"/>
+	<use xlink:href="#b_tea" x="-330" y="360" transform="rotate(7)"/>
+	<use xlink:href="#b_red" x="-300" y="355" transform="rotate(3)"/>
+	<use xlink:href="#b_red" x="-270" y="355" transform="rotate(6)"/>
+	<use xlink:href="#b_yel" x="-230" y="355" transform="rotate(8)"/>
+	<use xlink:href="#b_yel" x="-210" y="355" transform="rotate(3)"/>
+	<use xlink:href="#b_tea" x="-180" y="355" transform="rotate(5)"/>
+	<use xlink:href="#b_ora" x="-150" y="355" transform="rotate(7)"/>
+	<use xlink:href="#b_yel" x="-120" y="355" transform="rotate(2)"/>
+	<use xlink:href="#b_red" x="-90" y="355" transform="rotate(1)"/>
+	<use xlink:href="#b_red" x="-60" y="355" transform="rotate(9)"/>
+	<use xlink:href="#b_pur" x="-30" y="355" transform="rotate(7)"/>
+
+	<use xlink:href="#b_gre" x="-430" y="390" transform="rotate(5)"/>
+	<use xlink:href="#b_ora" x="-400" y="385" transform="rotate(2)"/>
+	<use xlink:href="#b_pur" x="-370" y="380" transform="rotate(8)"/>
+	<use xlink:href="#b_pur" x="-340" y="375" transform="rotate(7)"/>
+	<use xlink:href="#b_yel" x="-310" y="375" transform="rotate(3)"/>
+	<use xlink:href="#b_tea" x="-280" y="375" transform="rotate(5)"/>
+	<use xlink:href="#b_yel" x="-250" y="375" transform="rotate(0)"/>
+	<use xlink:href="#b_tea" x="-220" y="375" transform="rotate(8)"/>
+	<use xlink:href="#b_ora" x="-190" y="375" transform="rotate(6)"/>
+	<use xlink:href="#b_ora" x="-160" y="375" transform="rotate(3)"/>
+	<use xlink:href="#b_red" x="-130" y="375" transform="rotate(6)"/>
+	<use xlink:href="#b_yel" x="-100" y="375" transform="rotate(3)"/>
+	<use xlink:href="#b_pur" x="-70" y="375" transform="rotate(8)"/>
+
+	<use xlink:href="#b_tea" x="-410" y="415" transform="rotate(4)"/>
+	<use xlink:href="#b_ora" x="-380" y="415" transform="rotate(2)"/>
+	<use xlink:href="#b_pur" x="-350" y="415" transform="rotate(8)"/>
+	<use xlink:href="#b_tea" x="-320" y="415" transform="rotate(5)"/>
+	<use xlink:href="#b_yel" x="-290" y="415" transform="rotate(8)"/>
+	<use xlink:href="#b_ora" x="-260" y="415" transform="rotate(4)"/>
+	<use xlink:href="#b_tea" x="-230" y="415" transform="rotate(2)"/>
+	<use xlink:href="#b_red" x="-200" y="415" transform="rotate(3)"/>
+	<use xlink:href="#b_pur" x="-170" y="415" transform="rotate(8)"/>
+
+	<use xlink:href="#b_red" x="-410" y="455" transform="rotate(3)"/>
+	<use xlink:href="#b_gre" x="-380" y="455" transform="rotate(6)"/>
+	<use xlink:href="#b_pur" x="-350" y="455" transform="rotate(5)"/>
+	<use xlink:href="#b_pur" x="-320" y="455" transform="rotate(3)"/>
+	<use xlink:href="#b_pur" x="-290" y="455" transform="rotate(0)"/>
+
+	<use xlink:href="#b_pur" x="-380" y="485" transform="rotate(7)"/>
+	<use xlink:href="#b_ora" x="-300" y="485" transform="rotate(4)"/>
+	<use xlink:href="#b_ora" x="-190" y="485" transform="rotate(1)"/>
+
+	<use xlink:href="#b_ora" x="-290" y="565" transform="rotate(120, -273, 527)"/>
+
+
+	<g id="house">
+		<!-- these lines are the balloon strings -->
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-271" y1="587" x2="-220" y2="547"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-277" y1="587" x2="-210" y2="526"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-274" y1="587" x2="-213" y2="521"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-280" y1="587" x2="-199" y2="498"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-283" y1="587" x2="-206" y2="477"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-285" y1="587" x2="-210" y2="445"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-289" y1="587" x2="-221" y2="430"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-293" y1="587" x2="-237" y2="421"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-296" y1="587" x2="-259" y2="451"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-302" y1="587" x2="-265" y2="445"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-305" y1="587" x2="-285" y2="483"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-308" y1="587" x2="-295" y2="501"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-308" y1="587" x2="-296" y2="504"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-312" y1="587" x2="-302" y2="475"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-302" y1="587" x2="-270" y2="492"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-315" y1="587" x2="-340" y2="516"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-312" y1="587" x2="-340" y2="498"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-312" y1="587" x2="-336" y2="492"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-308" y1="587" x2="-336" y2="483"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-305" y1="587" x2="-327" y2="469"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-305" y1="587" x2="-316" y2="457"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-296" y1="587" x2="-305" y2="461"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-301" y1="587" x2="-251" y2="448"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-293" y1="587" x2="-237" y2="463"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-283" y1="587" x2="-210" y2="421"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-280" y1="587" x2="-199" y2="448"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-289" y1="587" x2="-232" y2="437"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-280" y1="587" x2="-199" y2="483"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-285" y1="587" x2="-199" y2="434"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-293" y1="587" x2="-232" y2="434"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-302" y1="587" x2="-285" y2="475"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-301" y1="587" x2="-280" y2="463"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-308" y1="587" x2="-336" y2="472"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-294" y1="587" x2="-333" y2="461"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-285" y1="587" x2="-202" y2="421"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-274" y1="587" x2="-194" y2="469"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-283" y1="587" x2="-199" y2="469"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-274" y1="587" x2="-202" y2="510"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-280" y1="587" x2="-202" y2="461"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-293" y1="587" x2="-224" y2="421"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-302" y1="587" x2="-266" y2="434"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-294" y1="584" x2="-255" y2="424"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-294" y1="584" x2="-315" y2="434"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-302" y1="587" x2="-340" y2="439"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-302" y1="587" x2="-333" y2="437"/>
+		<line fill="none" stroke="#D0C2C8" stroke-width="0.25" x1="-293" y1="587" x2="-324" y2="434"/>
+		<polygon id="chimney" fill="#5B3F46" points="-317.607,582.279 -270.274,586.279 -270.274,592.279 -267.607,592.279 -267.607,608.946 -271.94,608.946 -277.607,726.279 -323.607,723.946 -319.607,606.946 -324.94,605.613 -322.94,586.946 -318.94,586.946"/>
+		<polygon id="roof_main" fill="#443849" points="-545.941,726.279 6.393,699.789 13.881,823.603 -551.864,845.633"/>
+		<polygon id="body_main" fill="#986E63" points="-551.864,845.633 13.881,823.603 6.139,1196.338 -572.833,1182.839"/>
+		<polygon id="roof_secondary" fill="#6661B5" points="-172.274,600.279 -52.274,882.298 -80.94,882.298 -176.274,657.613 -310.94,882.298 -346.94,882.298"/>
+		<polygon id="body_secondary" fill="#765840" points="-176.274,657.613 -80.94,882.298 -92.927,1196.338 -324.691,1187.338 -310.94,882.298"/>
+	</g>
+	<!-- This animateMotion moves the balloons, strings and house along the clusterPath that was declared in the definitions section -->
+	<animateMotion dur="9s" repeatCount="indefinite">
+		<mpath xlink:href="#clusterPath"/>
+	</animateMotion>
+</g>
+
+<g id="georges_office">
+	<polygon id="frame" fill="#777777" points="390.166,37.167 390.166,215.834 87.166,215.834 87.166,226.5 389.833,226.5 389.833,26.5 87.166,26.5 87.166,37.167 "/>
+	<polygon id="ceiling" fill="#666666" points="68.5,0 87.166,26.5 389.833,26.5 411.166,0 "/>
+	<polygon id="wall_r" fill="url(#Grwall)" points="503,0 503,266 389.833,226.5 389.833,26.5 411.166,0 "/>
+	<polygon id="floor" fill="url(#Gfloor)" points="468.833,266 0,266 0,258.5 87.166,226.5 389.833,226.5 503,266 "/>
+	<polygon id="wall_l" fill="url(#Glwall)" points="0,0 68.5,0 87.166,26.5 87.166,226.5 0,258.5 "/>
+	<!-- the rects that follow are the window blinds -->
+	<rect x="359" y="33" fill="#333333" width="1" height="189"/>
+	<rect x="361" y="33" fill="#333333" width="1" height="189"/>
+	<rect x="364" y="33" fill="#333333" width="1" height="189"/>
+	<rect x="369" y="33" fill="#333333" width="2" height="189"/>
+	<rect x="374" y="33" fill="#333333" width="3" height="189"/>
+	<rect x="379" y="33" fill="#333333" width="4" height="189"/>
+	<rect x="384" y="33" fill="#333333" width="5" height="189"/>
+	<!-- the use tags that follow create overlays for the surfaces of George's office and animate the appropriately-rotated version
+		 of the ballooncluster inside it with an opacity of 20%-30% so they look like reflections -->
+	<use xlink:href="#reflect_wall_r" x="0" y="0" style="clip-path:url(#clip_wall_r);" opacity="0.3"/>
+	<use xlink:href="#reflect_wall_l" x="0" y="0" style="clip-path:url(#clip_wall_l)" opacity="0.3"/>
+	<use xlink:href="#reflect_floor" x="0" y="0" style="clip-path:url(#clip_floor)" opacity="0.2"/>
+	<use xlink:href="#reflect_ceiling" x="0" y="0" style="clip-path:url(#clip_ceiling)" opacity="0.2"/>
+
+	<g id="george">
+	<path id="georges_face" fill="#AAAAAA" d="M136.153,131.517c0,0,3.255-3.314,6.302,2.219c0.622-2.101,0.799-2.072,0.887-4.084 c0.325,0.178,2.486,1.864,4.35-1.272c0.859-1.509,1.303-3.876,1.51-6.065c0.325-0.09,0.562,0.059,0.621-2.545l-0.385-0.148 c0,0-0.119-2.101-0.503-2.87c-0.089-0.77-0.267-3.433-0.267-3.433l-10.534,0.787c0,0-1.036,14.185-1.332,14.51 C136.714,129.061,136.153,131.517,136.153,131.517z"/>
+	<path id="georges_hair" d="M134.88,125.835c0,0,0-2.219-1.6-4.882c-0.442,0-1.863,0.178-3.195-3.373c-0.443-1.243-4.704-5.593,0-13.227 c1.421-1.775,7.901-5.859,12.339-4.083c2.574,0.976,3.995,3.106,4.616,4.083c0.621,0.977,2.307,2.574,3.816,3.106 c1.51,0.533,4.35,3.285,0,7.19c0.208-0.68,0.74-2.16-0.207-2.042c0,0-0.74,0.089-0.829,1.42c-0.297-0.03-1.627-0.237-2.101,3.965 c-0.326,0.118-0.74,0.326-0.74,0.326s0.68-2.87,0.68-3.462c0-0.592-0.059-2.485-2.396,0.326c-0.326,0.591-1.479,3.077-1.213,6.066 c-0.355-0.474-0.77-0.948-0.977-1.066c0,0.74,0.148,3.817-1.42,4.824c-1.568,1.005-1.124,0.443-1.124,0.443l0.324-1.213 c0,0-1.331,3.669-4.201,4.142c0.147-0.799,0.771-2.208-0.681-3.403C135.827,125.155,135.915,126.28,134.88,125.835z"/>
+	<path id="georges_arm" fill="#AAAAAA" d="M162.132,154.064 163.818,138.44 162.975,134.357 164.528,130.362 164.973,131.073 166.925,126.368 167.932,127.078 167.932,127.966 169.322,128.38 169.322,129.652 170.653,130.362 170.653,131.073 171.186,131.694 171.186,133.204 170.298,135.511 167.103,138.707 167.932,163.566 163.996,162.852 161.738,156.831z">
+		<animate dur="9s" repeatCount="indefinite" attributeName="d" values="
+		M162.132,154.064 163.818,138.44 162.975,134.357 164.528,130.362 164.973,131.073 166.925,126.368 167.932,127.078 167.932,127.966 169.322,128.38 169.322,129.652 170.653,130.362 170.653,131.073 171.186,131.694 171.186,133.204 170.298,135.511 167.103,138.707 167.932,163.566 163.996,162.852 161.738,156.831z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M162.132,154.064 163.818,138.44 162.975,134.357 164.528,130.362 164.973,131.073 166.925,126.368 167.932,127.078 167.932,127.966 169.322,128.38 169.322,129.652 170.653,130.362 170.653,131.073 171.186,131.694 171.186,133.204 170.298,135.511 167.103,138.707 167.932,163.566 163.996,162.852 161.738,156.831z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;
+		M160.75,154.341 160.152,138.638 158.726,134.72 159.683,130.542 160.226,131.181 161.475,126.243 162.574,126.799 162.703,127.677 164.139,127.885 164.324,129.145 165.743,129.654 165.846,130.356 166.464,130.894 166.683,132.388 166.139,134.8 163.441,138.425 167.868,162.901 163.87,162.765 160.763,157.136z;"/>
+	</path>
+	<path id="georges_shirt" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" d="M123.666,141.37c0,0,6.273-2.012,8.758-3.314 c2.486-1.302,3.226-3.402,3.729-6.539c1.994-0.964,4.616-1.983,6.302,2.219c-0.089,1.597-0.443,4.437,1.686,4.792 c2.131,0.355,7.758,0.711,8.318,0.829c0.559,0.118,1.861,0.71,2.688,2.604c0.829,1.894,2.486,12.907,12.784,21.604 c0,8.577,0,8.577,0,8.577s-1.658,4.971-7.338-2.131c-5.682-7.101-5.208-10.061-9.942-13.611l-2.278,7.165l-1.599,15.086 l-6.242,1.243h-10.89l-5.237-1.243c0,0,0.355-21.836-1.687-24.766c0.597,1.631,1.954,8.788,0.976,11.983 c-0.976,3.195-2.396,12.517-5.858,2.219c-0.267-4.523,0.621-7.811,0.887-9.232c0.266-1.419,1.42-5.592,1.242-10.475 c0.533-2.929,1.066-4.882,1.066-4.882S121.161,142.209,123.666,141.37z"/>
+	<polygon id="georges_pants" fill="#43433E" points="122.009,228.718 124.406,178.652 146.774,178.652 144.556,228.718 	"/>
+	<polygon id="georges_desktop" fill="#43433E" points="100.349,213.982 177.577,173.149 230.838,173.149 184.501,213.982 	"/>
+	<rect id="georges_deskside" x="100.349" y="213.982" fill="#191917" width="84.152" height="52.018"/>
+	<polygon id="georges_deskfront" fill="#2B2B28" points="184.501,266 184.501,213.982 230.838,173.149 230.838,224.989 	"/>
+	<path id="georges_airplane" stroke="#ffffff" fill="#eeeeee" d="M153.61,122.64 164.352,125.036 164.973,125.747 165.416,125.036 176.069,122.64 164.074,131.073 163.641,126.368z">
+		<animate dur="9s" repeatCount="indefinite" attributeName="d" values="
+		M153.61,122.64 164.352,125.036 164.973,125.747 165.416,125.036 176.069,122.64 164.074,131.073 163.641,126.368z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M153.61,122.64 164.352,125.036 164.973,125.747 165.416,125.036 176.069,122.64 164.074,131.073 163.641,126.368z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M147.76,124.486 158.736,125.298 159.453,125.911 159.789,125.144 169.981,121.228 159.337,131.311 158.226,126.719z;
+		M176.823,188.412 166.101,185.929 165.486,185.214 165.036,185.92 154.364,188.23 166.427,179.895 166.822,184.603z;
+		M176.823,188.412 166.101,185.929 165.486,185.214 165.036,185.92 154.364,188.23 166.427,179.895 166.822,184.603z;
+		M176.823,188.412 166.101,185.929 165.486,185.214 165.036,185.92 154.364,188.23 166.427,179.895 166.822,184.603z;"/>
+	</path>
+	</g>
+</g>
+</svg>
